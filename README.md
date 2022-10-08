@@ -1,2 +1,2 @@
-# gym
-Attendance and Fee payment system
+# Hiring Assistant Server
+Manages Resumes and Candidates
