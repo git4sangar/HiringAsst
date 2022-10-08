@@ -1,0 +1,16 @@
+NOTE:
+(1) string_values shall be within double-quotes
+(2) use COUNT(*) to count the results
+(3) Column_Name :    referred_on,    name,    jd,    mobile,    vendor,    last_call,    status,    next_call,    lwd,    doj,    remarks
+
+Sample Queries
+-------------------
+To get no of resumes for a JD
+SELECT jd, COUNT(*) FROM Candidates WHERE jd = 833;
+
+To get no of resumes for a JD vendor wise
+SELECT jd, vendor, COUNT(*) FROM Candidates WHERE jd = 833 GROUP BY vendor;
+
+
+To get all shortlisted candidates for a JD vendor wise
+SELECT jd, vendor, status, COUNT(*) FROM Candidates WHERE jd = 833 AND status = 51 GROUP BY vendor;
